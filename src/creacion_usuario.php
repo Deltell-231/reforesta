@@ -17,7 +17,7 @@ try{
 
         $usuarioNuevo = new Usuario($usuarioInsertado, $passwordCifrada);
 
-        $usuarioNuevo->aniadir($pdo);
+       
     }
 }
 catch(Exception $e){
