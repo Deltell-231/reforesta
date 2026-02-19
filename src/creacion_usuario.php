@@ -15,9 +15,9 @@ try{
         //Realizamos el hash de la contraseña insertada
         $passwordCifrada = hash('sha256',$passwordInsertada);
 
-        $usuarioNuevo = new Usuario($usuarioInsertado, $passwordCifrada);
+        $nuevoUsuario = new Usuario($usuarioInsertado, $passwordCifrada);
 
-       
+        $nuevoUsuario->aniadir($pdo);
     }
 }
 catch(Exception $e){
