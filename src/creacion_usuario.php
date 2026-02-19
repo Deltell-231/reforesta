@@ -15,8 +15,6 @@ try{
         //Realizamos el hash de la contraseña insertada
         $passwordCifrada = hash('sha256',$passwordInsertada);
 
-        //Creamos un usuarios con los datos y llamamos a la función que añade 
-        //usuarios a la base de datos, presente en la clase Usuario
         $usuarioNuevo = new Usuario($usuarioInsertado, $passwordCifrada);
 
         $usuarioNuevo->aniadir($pdo);

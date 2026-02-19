@@ -3,9 +3,9 @@
     session_start();
 
     //Si existe una sesion de ese usuario, la eliminamos
-    if(isset($_SESSION['usuario'])){
-        unset($_SESSION['usuario']);
-    }
+    
+    unset($_SESSION['usuario']);
+    
 
     //Destruimos la sesion
     session_destroy();

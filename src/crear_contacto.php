@@ -14,8 +14,8 @@ require_once dirname(__DIR__)."/html/config.php";
 $array_errores = [];
 
 try {
-    //Valido el nombre, email y telefono y si no hay ningún error, creo un contacto y llamo a su función de añadir
-    if ($_SERVER["REQUEST_METHOD"] == "POST"){
+    
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
         $nombre = validarNombre($array_errores, $_POST["name"]);
         $email = validarEmail($array_errores, $_POST["email"],$pdo);
         $telefono = validarTelefono($array_errores, $_POST["phone"]);
@@ -36,7 +36,7 @@ try {
 } 
 finally{
     $stmt = null;
-    $pdo = null;
+   
 }
 ?>
     <br>
