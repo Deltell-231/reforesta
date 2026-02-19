@@ -21,7 +21,6 @@ if (isset($_SESSION['usuario'])) {
         <label for='usuario'>Usuario:</label><br />
         <input type='text' name='usuario' id='usuario' maxlength="50" /><br />
         <label for='password'>Contraseña:</label><br />
-        <input type='password' name='password' id='password' maxlength="50" /><br />
         <input type='submit' name='enviar' value='Enviar' />
     </form>
     <br>
