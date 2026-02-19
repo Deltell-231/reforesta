@@ -12,7 +12,7 @@ try{
 
         $passwordInsertada = $_POST['passwordInsertada'];
 
-        
+        //Realizamos el hash de la contraseña insertada
         $passwordCifrada = hash('sha256',$passwordInsertada);
 
         $usuarioNuevo = new Usuario($usuarioInsertado, $passwordCifrada);
